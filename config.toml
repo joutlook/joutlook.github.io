@@ -115,10 +115,6 @@ uglyURLs = false
     [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 8
-        identifier = "search"
-        post = "search"
 
 [params]
     enableHeader = false
@@ -138,7 +134,7 @@ uglyURLs = false
     displayMenuInHome = false
     activeInSection = false
     homeLayout = "poetry"
-    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "🐂🐂🐂[**POSTS**](/posts)🐂🐂🐂 ", "---"]
+    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "-🐂-🐂-🐂-[**POSTS**](/posts)-🐂-🐂-🐂- ", "---"]
     homeLinksPadding = 1
     ## Footage
     homePoster = ""
@@ -296,7 +292,7 @@ uglyURLs = false
 
     ######################################
     # Google Analytics
-    enableGoogleAnalytics = true
+    enableGoogleAnalytics = false
     trackingCodeType = "gtag"
     trackingID = ""
 
