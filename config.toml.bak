@@ -1,10 +1,10 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://joutlook.github.io/"
-title = "J Out Look"
-languageCode = "zh"
-hasCJKLanguage = true
+baseURL = "https://example.com/"
+title = "Hugo Theme MemE"
+languageCode = "en"
+hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 
@@ -15,7 +15,7 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "zh"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 # Title case style
@@ -52,12 +52,12 @@ uglyURLs = false
 
 # URL structure
 [permalinks]
-    #categories = "/categories/:slug/"
+    categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
 # Taxonomies
 [taxonomies]
-    #category = "categories"
+    category = "categories"
     tag = "tags"
 
 # Modified date
@@ -102,17 +102,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "joutlook"
+    name = "reuixiy"
     # Email
-    email = "joutlook@outlook.com"
+    email = "reuixiy@gmail.com"
     # Motto or introduction
-    motto = "无法自制的人得不到自由"
+    motto = "Viva La Vida"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
-    website = "https://joutlook.github.io/"
+    website = "https://io-oi.me/"
     # Twitter
-    # twitter = "reuixiy"
+    twitter = "reuixiy"
 
 # Related content
 [related]
@@ -219,34 +219,34 @@ uglyURLs = false
         weight = 2
         pre = "internal"
         post = "archive"
-    # [[menu.main]]
-    #     pageref = "/categories/"
-    #     name = "Categories"
-    #     weight = 3
-    #     pre = "internal"
-    #     post = "th"
+    [[menu.main]]
+        pageref = "/categories/"
+        name = "Categories"
+        weight = 3
+        pre = "internal"
+        post = "th"
     [[menu.main]]
         pageref = "/tags/"
         name = "Tags"
         weight = 4
         pre = "internal"
         post = "tags"
-    # [[menu.main]]
-    #     pageref = "/about/"
-    #     name = "About"
-    #     weight = 5
-    #     pre = "internal"
-    #     post = "user-circle"
+    [[menu.main]]
+        pageref = "/about/"
+        name = "About"
+        weight = 5
+        pre = "internal"
+        post = "user-circle"
     [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
-    # [[menu.main]]
-    #     weight = 7
-    #     identifier = "lang-switcher"
-    # [[menu.main]]
-    #     weight = 8
-    #     identifier = "search"
-    #     post = "search"
+    [[menu.main]]
+        weight = 7
+        identifier = "lang-switcher"
+    [[menu.main]]
+        weight = 8
+        identifier = "search"
+        post = "search"
 
 
 
@@ -257,23 +257,23 @@ uglyURLs = false
     ######################################
     # Header
 
-    enableHeader = false
+    enableHeader = true
 
-    enableHeaderAutoHide = true
+    enableHeaderAutoHide = false
     # Note: works for header layout flex only
 
-    displayHeaderInHome = false
+    displayHeaderInHome = true
     # Note: invalid for header layout flex
 
     headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
     # Note: https://developer.mozilla.org/en-US/docs/Web/CSS/background
 
-    headerLayout = "center"
+    headerLayout = "flex"
     # Note: center or flex
 
     # Hide menu bar and display a toggle
     # on narrow screen?
-    enableNavToggle = false
+    enableNavToggle = true
 
     navHeight = "10em"
     # Note: menu bar height when it’s
@@ -305,10 +305,10 @@ uglyURLs = false
     ######################################
     # Menu Bar
 
-    enableMenu = false
+    enableMenu = true
     # Note: invalid for header layout flex
 
-    displayMenuInHome = false
+    displayMenuInHome = true
     # Note: invalid for header layout flex
 
     # Highlight current menu item by section?
@@ -329,11 +329,11 @@ uglyURLs = false
     # 3. posts     List of post’s summary
     # 4. page      Normal page/post
 
-    homeLayout = "poetry"
+    homeLayout = "posts"
 
     ## Poetry
     # Verse (Markdown supported)
-    homePoetry = ["## 断章", "你站在桥上看风景", "看风景的人在楼上看你", "明月装饰了你的窗子", "你装饰了别人的梦", "---", "|👉[**POSTS**](/post)👈 | 👉[**TAGS**](/tags)👈|", "---", "Github Mirror: [https://ferstar.github.io](https://ferstar.github.io/post)", "Cloudflare Mirror: [https://ferstar.pages.dev](https://ferstar.pages.dev/post)"]
+    homePoetry = []
     # Padding of links at the bottom
     # Unit: em
     homeLinksPadding = 1
@@ -363,15 +363,15 @@ uglyURLs = false
     siteLogo = "/icons/apple-touch-icon.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "无法自制的人得不到自由。"
+    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "2018-07-20T20:17:43+00:00"
+    siteCreatedTime = "1969-07-20T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    #siteTwitter = "reuixiy"
+    siteTwitter = "reuixiy"
     # Note: used for Twitter Cards
 
 
@@ -401,7 +401,7 @@ uglyURLs = false
     # tree organization structure of your
     # posts.
 
-    categoryBy = "sections"
+    categoryBy = "categories"
     # ATTENTION: If you set it to `sections`,
     #            be sure to delete `categories`
     #            in `taxonomies` at the top
@@ -448,14 +448,14 @@ uglyURLs = false
     ######################################
     # List Page
 
-    listWidth = 42
+    listWidth = 36
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
 
     displayListTitle = true
 
-    listDateFormat = "2018-01-02"
+    listDateFormat = "January 2"
     # ATTENTION: be sure to follow the
     #            specified format
     #            https://gohugo.io/functions/format/
@@ -464,7 +464,7 @@ uglyURLs = false
     # Note: left or right
 
     # Separate the list by month?
-    groupByMonth = false
+    groupByMonth = true
 
     # Enable Chinese zodiac?
     chineseZodiac = true
@@ -591,7 +591,7 @@ uglyURLs = false
 
     jsonLD = true
     openGraph = true
-    twitterCards = false
+    twitterCards = true
     # ATTENTION: If you set twitterCards
     #            to `true`, be sure to
     #            enable openGraph also.
@@ -657,7 +657,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableComments = true
+    enableComments = false
     # Note: *global settings*
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
@@ -667,7 +667,7 @@ uglyURLs = false
 
     ## Disqus
     enableDisqus = false
-    disqusShortname = "ferstar"
+    disqusShortname = ""
 
     ## Valine
     enableValine = false
@@ -691,12 +691,12 @@ uglyURLs = false
     # Note: https://valine.js.org/
 
     ## Utterances
-    enableUtterances = true
-    utterancesRepo = "joutlook/joutlook.github.io"
+    enableUtterances = false
+    utterancesRepo = ""
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
-    utterancesLabel = "Comment"
+    utterancesLabel = ""
     # Note: https://utteranc.es/
 
     ## Gitalk
@@ -879,7 +879,7 @@ uglyURLs = false
     displayPublishedDate = true
     publishedDateIcon = "calendar-alt"
 
-    displayModifiedDate = false
+    displayModifiedDate = true
     modifiedDateIcon = "calendar-check"
 
     displayExpiredDate = true
@@ -977,7 +977,7 @@ uglyURLs = false
 
     enableImageHost = false
 
-    imageHostURL = "https://joutlook.github.io/"
+    imageHostURL = "https://example.com/"
 
     # Replace the image link in the HTML
     # head meta also?
@@ -999,7 +999,7 @@ uglyURLs = false
 
     enableVideoHost = false
 
-    videoHostURL = "https://joutlook.github.io/"
+    videoHostURL = "https://example.com/"
 
 
     ######################################
@@ -1086,7 +1086,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 16
+    fontSize = 18
 
     ######################################
     ## Tab Size
@@ -1096,7 +1096,7 @@ uglyURLs = false
     ######################################
     ## Line Height
 
-    lineHeight = 2
+    lineHeight = 1.618
     # Note: apply to post paragraph & toc
     #       only
 
@@ -1119,7 +1119,7 @@ uglyURLs = false
     ######################################
     ## Text Justification
 
-    enableJustify = true
+    enableJustify = false
     # Note: *global settings*
     #       `align` in post’s Front Matter
     #       has a higher priority than here
@@ -1127,7 +1127,7 @@ uglyURLs = false
     ######################################
     ## Drop Cap
 
-    enableDropCap = false
+    enableDropCap = true
     # Note: *global settings*
     #       `dropCap` in post’s Front Matter
     #       has a higher priority than here
@@ -1162,20 +1162,20 @@ uglyURLs = false
     # Note: new Markdown syntax created by MemE
     #       `..文本..`
 
-    enableEmphasisPoint = true
+    enableEmphasisPoint = false
 
     ######################################
     ## Chinese Punctuation Glyph Correction
 
-    enableChinesePunctuationGlyphCorrection = true
+    enableChinesePunctuationGlyphCorrection = false
 
 
     ######################################
     # Post Copyright
 
-    enablePostCopyright = false
+    enablePostCopyright = true
 
-    displayPostCopyright = false
+    displayPostCopyright = true
     # Note: *global settings*
     #       `displayCopyright` in post’s Front Matter
     #       has a higher priority than here
@@ -1184,9 +1184,9 @@ uglyURLs = false
     ######################################
     # Post Updated Badge
 
-    enablePostUpdatedBadge = false
+    enablePostUpdatedBadge = true
 
-    displayUpdatedBadge = false
+    displayUpdatedBadge = true
     # Note: *global settings*
     #       `badge` in post’s Front Matter
     #       has a higher priority than here
@@ -1228,9 +1228,9 @@ uglyURLs = false
     ######################################
     # Post Share
 
-    enablePostShare = false
+    enablePostShare = true
 
-    displayPostShare = false
+    displayPostShare = true
     # Note: *global settings*
     #       `share` in post’s Front Matter
     #       has a higher priority than here
@@ -1267,7 +1267,7 @@ uglyURLs = false
     ######################################
     # Post Tags
 
-    enablePostTags = false
+    enablePostTags = true
 
     postTagsIcon = "tag"
 
@@ -1295,8 +1295,8 @@ uglyURLs = false
     ######################################
     # Minimal Footer
 
-    enableMinimalFooter = true
-    enableVerticalBarStructure = true
+    enableMinimalFooter = false
+    enableVerticalBarStructure = false
     # Note: If you enable this, the
     #       categories or sections that
     #       displayed on the right will
@@ -1330,7 +1330,7 @@ uglyURLs = false
 
     displayFooterInHome = true
 
-    displayCopyleftSymbol = true
+    displayCopyleftSymbol = false
     displayCopyrightSymbol = true
 
     displaySiteCreatedYear = true
@@ -1350,12 +1350,12 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # Custom Footer (Markdown supported)
-    customFooter = "👀[无法自制的人得不到自由](/)👀"
+    customFooter = ""
 
     displayBusuanziSiteUVAndPV = false
-    busuanziSiteUVText = "本站访客数"
+    busuanziSiteUVText = "Site UV"
     busuanziSiteUVIcon = "user"
-    busuanziSitePVText = "本站访问量"
+    busuanziSitePVText = "Site PV"
     busuanziSitePVIcon = "eye"
     # Note: render only in production
     #       environment
@@ -1364,7 +1364,7 @@ uglyURLs = false
     #       https://busuanzi.ibruce.info/
 
     # Socials
-    enableSocials = false
+    enableSocials = true
     # Note: see data/Socials.toml
 
 
@@ -1518,4 +1518,3 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
-
