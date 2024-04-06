@@ -829,8 +829,8 @@ uglyURLs = false
 
     displayFooterInHome = true
 
-    displayCopyleftSymbol = true
-    displayCopyrightSymbol = true
+    displayCopyleftSymbol = false
+    displayCopyrightSymbol = false
 
     displaySiteCreatedYear = true
 
