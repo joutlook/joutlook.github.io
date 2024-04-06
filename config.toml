@@ -138,7 +138,7 @@ uglyURLs = false
     displayMenuInHome = false
     activeInSection = false
     homeLayout = "poetry"
-    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "|🐂[**POSTS**](/posts)🐂 |", "---"]
+    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "🐂🐂🐂[**POSTS**](/posts)🐂🐂🐂 ", "---"]
     homeLinksPadding = 1
     ## Footage
     homePoster = ""
@@ -851,7 +851,7 @@ uglyURLs = false
     # Custom Footer (Markdown supported)
     customFooter = "👀[无法自制的人得不到自由](/)👀"
 
-    displayBusuanziSiteUVAndPV = true
+    displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "本站访问量"
