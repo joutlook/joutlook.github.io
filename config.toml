@@ -1,70 +1,29 @@
-##########################################
-# Site Settings
-
 baseURL = "https://joutlook.github.io/"
 title = "J Out Look"
 languageCode = "zh"
 hasCJKLanguage = true
-# Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
-
-# Name of theme
 theme = "meme"
-
-# `hugo new` automatically opened text editor
 newContentEditor = ""
-
-# i18n
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
-
-# Title case style
-# https://gohugo.io/getting-started/configuration/#configure-title-case
 titleCaseStyle = "none"
-
-# Pluralize list titles
 pluralizeListTitles = false
-
-# The length of text in words to show in summary
 summaryLength = 42
-
-# Enable Emoji emoticons support?
-enableEmoji = false
-
-# Text to display for footnote return links
+enableEmoji = true
 footnoteReturnLinkContents = "↩"
-
-# Enable `.GitInfo` object for each page?
 enableGitInfo = false
-
-# Enable generation of `robots.txt` file?
 enableRobotsTXT = true
-
-# Number of items per page in paginated
-# lists (valid for the `posts` homepage
-# layout in MemE)
 paginate = 5
-
-# URL related
 disablePathToLower = false
 relativeURLs = false
 uglyURLs = false
-
-# URL structure
 [permalinks]
-    #categories = "/categories/:slug/"
     tags = "/tags/:slug/"
-
-# Taxonomies
 [taxonomies]
-    #category = "categories"
     tag = "tags"
-
-# Modified date
 [frontmatter]
     lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
-# Markdown renderer
 [markup]
     defaultMarkdownHandler = "goldmark"
     [markup.goldmark]
@@ -94,27 +53,14 @@ uglyURLs = false
         startLevel = 2
         endLevel = 6
         ordered = true
-
-# HTML minify
 [minify.tdewolff.html]
     keepWhitespace = false
-
-# Author’s information
 [author]
-    # Name
     name = "joutlook"
-    # Email
     email = "joutlook@outlook.com"
-    # Motto or introduction
     motto = "无法自制的人得不到自由"
-    # Avatar
     avatar = "/icons/apple-touch-icon.png"
-    # Personal website, default: baseURL
     website = "https://joutlook.github.io/"
-    # Twitter
-    # twitter = "reuixiy"
-
-# Related content
 [related]
     threshold = 80
     includeNewer = true
@@ -129,215 +75,71 @@ uglyURLs = false
         name = "date"
         weight = 10
         pattern = "2006"
-
-# MIME type of Atom
 [mediaTypes."application/atom+xml"]
     suffixes = ["xml"]
-
-# Custom Atom template of MemE
 [outputFormats.SectionsAtom]
     mediaType = "application/atom+xml"
     baseName = "atom"
-
-# Custom RSS template of MemE
 [outputFormats.SectionsRSS]
     mediaType = "application/rss+xml"
     baseName = "rss"
-
-# Search index for lunr.js
 [outputFormats.SearchIndex]
     mediaType = "application/json"
     baseName = "search"
-
-# Search index for Algolia
 [outputFormats.Algolia]
     mediaType = "application/json"
     baseName = "algolia"
     isPlainText = true
     notAlternative = true
-
-# Hugo’s output control
 [outputs]
     page = ["HTML"]
-    # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
     home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
     section = ["HTML"]
     taxonomy = ["HTML"]
     term = ["HTML"]
-
-# Maximum number of items in the Atom & RSS feed
 [services.rss]
     limit = -1
-
-
-
-##########################################
-# Menu Settings
-
-# MemE supports the following four menus:
-# 1. main       Menu bar below the header
-#               (center layout) or inside
-#               the header (flex layout)
-# 2. home       Links at the bottom of the
-#               homepage (valid for the
-#               `poetry` and `footage`
-#               homepage layout)
-# 3. socials    Social bar (minimal footer
-#               in about page)
-# 4. links      Link bar (minimal footer
-#               in about page)
-
-# The configuration instructions in the
-# menu are as follows:
-# pageref/url   internal/external URL
-# name          Text (won’t display if it
-#               is left empty("") or does
-#               not exist)
-# weight        Position
-# pre           Type of link (internal or
-#               external)
-# post          Icon (won’t display if it
-#               is left empty("") or does
-#               not exist)
-# identifier    Icon’s class name
-#               (there are three special
-#               values for header layout
-#               flex: `theme-switcher`,
-#               `lang-switcher`, `search`)
-
 [menu]
-    ## Menu bar
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "Home"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
     [[menu.main]]
         pageref = "/posts/"
         name = "Posts"
         weight = 2
         pre = "internal"
         post = "archive"
-    # [[menu.main]]
-    #     pageref = "/categories/"
-    #     name = "Categories"
-    #     weight = 3
-    #     pre = "internal"
-    #     post = "th"
     [[menu.main]]
         pageref = "/tags/"
         name = "Tags"
         weight = 4
         pre = "internal"
         post = "tags"
-    # [[menu.main]]
-    #     pageref = "/about/"
-    #     name = "About"
-    #     weight = 5
-    #     pre = "internal"
-    #     post = "user-circle"
     [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
-    # [[menu.main]]
-    #     weight = 7
-    #     identifier = "lang-switcher"
-    # [[menu.main]]
-    #     weight = 8
-    #     identifier = "search"
-    #     post = "search"
-
-
-
-##########################################
-# Theme Settings
+    [[menu.main]]
+        weight = 8
+        identifier = "search"
+        post = "search"
 
 [params]
-    ######################################
-    # Header
-
     enableHeader = false
-
     enableHeaderAutoHide = true
-    # Note: works for header layout flex only
-
     displayHeaderInHome = false
-    # Note: invalid for header layout flex
-
     headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
-    # Note: https://developer.mozilla.org/en-US/docs/Web/CSS/background
-
     headerLayout = "center"
-    # Note: center or flex
-
-    # Hide menu bar and display a toggle
-    # on narrow screen?
     enableNavToggle = false
-
     navHeight = "10em"
-    # Note: menu bar height when it’s
-    #       toggled
-
-
-    ######################################
-    # Brand Bar (inside header)
-
-    # Use SVG?
     siteBrandSVG = false
-    # If true, put your SVG in the `SVG.toml`
-    # file and configure the following options.
-    # Unit: px
     siteBrandSVGWidth = 250
     siteBrandSVGHeight = 100
     siteBrandSVGFill = "#fff"
-    # If false, your site title will be
-    # used as the default and displayed as
-    # text. The font size and font color
-    # can be configured below. The font
-    # family can be configured in typography
-    # section at the bottom of this file.
-    # Unit: em
     siteBrandFontSize = 1
     siteBrandFontColor = "var(--color-contrast-high)"
-
-
-    ######################################
-    # Menu Bar
-
     enableMenu = false
-    # Note: invalid for header layout flex
-
     displayMenuInHome = false
-    # Note: invalid for header layout flex
-
-    # Highlight current menu item by section?
     activeInSection = false
-    # Note: if true, the menu item in the
-    #       post page will be highlighted
-    #       also if that post’s section is
-    #       the `url` of that menu item
-
-
-    ######################################
-    # Homepage Layout
-
-    # For homepage layout, MemE has the
-    # following four different types:
-    # 1. poetry    A few lines of verse
-    # 2. footage   With fullscreen background videos
-    # 3. posts     List of post’s summary
-    # 4. page      Normal page/post
-
     homeLayout = "poetry"
-
-    ## Poetry
-    # Verse (Markdown supported)
-    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "|👉[**POSTS**](/posts)👈 | 👉[**TAGS**](/tags)👈|", "---"]
-    # Padding of links at the bottom
-    # Unit: em
+    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "|🐂[**POSTS**](/posts)🐂 |", "---"]
     homeLinksPadding = 1
-
     ## Footage
     homePoster = ""
     homeVideoWebm = ""
@@ -349,42 +151,15 @@ uglyURLs = false
     homeDescription = ""
     homeKeywords = ""
     homeLinksDelimiter = ""
-
     ## Posts
     enableHideInHomepage = false
-    # Note: enable `hideInHomepage` front
-    #       matter support (disabled by
-    #       default for performance concern)
-
-
-    ######################################
-    # Site Info
-
     siteLogo = "/icons/apple-touch-icon.png"
-    # Note: used for JSON-LD, Open Graph
-
-    siteDescription = "无法自制的人得不到自由。"
-    # Note: used for HTML head meta, JSON-LD,
-    #       Open Graph, Atom, RSS
-
-    siteCreatedTime = "2018-07-20T20:17:43+00:00"
+    siteDescription = "无法自制的人得不到自由"
+    siteCreatedTime = "2015-07-20T20:17:43+00:00"
     categoryBy = "sections"
-    # Enable tree structure layout?
     enableTree = true
-    # ATTENTION: This option cannot be
-    #            disabled if you set
-    #            `categoryBy` to `sections`
-
-    # Display title of posts?
     displayPosts = true
-
-    # Display count of posts under each
-    # category?
     displayPostsCount = true
-
-    # Set to a non-negative number to limit
-    # the number of posts displayed per
-    # category/section.
     limitPostsLimit = -1
 
 
@@ -392,49 +167,19 @@ uglyURLs = false
     # Tags Page
 
     enableTagCloud = true
-
     fontUnit = "em"
     largestFontSize = 2.5
     smallestFontSize = 1
-
-
-    ######################################
-    # List Page
-
     listWidth = 42
-    # Note: you can leave it empty("") to
-    #       fallback to the default value: 42
-    #       Unit: em
-
     displayListTitle = true
-
-    listDateFormat = "2018-01-02"
-    # ATTENTION: be sure to follow the
-    #            specified format
-    #            https://gohugo.io/functions/format/
-
+    listDateFormat = "1 月 2 日"
     listDatePosition = "right"
-    # Note: left or right
-
-    # Separate the list by month?
     groupByMonth = false
-
-    # Enable Chinese zodiac?
     chineseZodiac = true
-
-    # Translate the year? (valid for title)
     i18nYear = false
-    # Translate the month? (valid for title)
     i18nMonth = false
-    # Display count of posts in each
-    # taxonomy term?
     displayTaxonomyTermCount = true
-
-    # Set to a non-negative number to limit
-    # the number of posts displayed per
-    # taxonomy term.
     limitEntriesLimit = -1
-    # Include full content?
     includeContent = true
     enableDarkMode = true
     defaultTheme = "light"
@@ -500,29 +245,12 @@ uglyURLs = false
     gitalkRepo = "your_repository"
     gitalkOwner = "your_gitalk_owner"
     gitalkAdmin = ["your_gitalk_admin"]
-
-    # 1. default (`location.href`)
-    # 2. pathname (`location.pathname`)
-    # 3. hash (hash_filepath)
-    # 4. custom:your_gitalk_id ("your_gitalk_id")
     gitalkID = "pathname"
-
     gitalkNumber = -1
     gitalkLables = ["Gitalk"]
-
-    # 1. default (`document.title`)
-    # 2. custom:your_gitalk_title ("your_gitalk_title")
     gitalkTitle = "default"
-
-    # 1. default (`location.href` + header.meta[description])
-    # 2. href (`location.href`)
-    # 3. custom:your_gitalk_body ("your_gitalk_body")
     gitalkBody = "default"
-
-    # 1. default (`navigator.language || navigator.userLanguage`)
-    # 2. Support [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko, fa, ja]
     gitalkLanguage = "en"
-
     gitalkDistractionFreeMode = false
     gitalkPerPage = 10
     gitalkPagerDirection = "last"
@@ -533,7 +261,6 @@ uglyURLs = false
     gitalkEnterAnimation = "accordionVertical"
     gitalkLeaveAnimation = "accordionVertical"
     gitalkEnableHotKey = true
-    # Note: https://github.com/gitalk/gitalk
 
     ## Giscus
     enableGiscus = false
@@ -549,7 +276,6 @@ uglyURLs = false
     giscusTheme = "light"
     giscusThemeDark = "dark"
     giscusLang = "en"
-    # Note: https://giscus.app
 
     # Remark42
     enableRemark42 = false
@@ -566,35 +292,22 @@ uglyURLs = false
     remark42ShowRssSubscription = true
     remark42SimpleView = false
     remark42NoFooter = false
-    # Note: https://remark42.com/docs/configuration/frontend/
 
 
     ######################################
     # Google Analytics
-
-    # Note: render only in production
-    #       environment
-
-    enableGoogleAnalytics = false
-
+    enableGoogleAnalytics = true
     trackingCodeType = "gtag"
-    # Note: gtag or analytics
-
     trackingID = ""
 
 
     ######################################
     # Google Site Verification
-
     googleSiteVerification = ""
 
 
     ######################################
     # Google AdSense
-
-    # Note: render only in production
-    #       environment
-
     googleAdClient = ""
 
     ## Auto Ads
@@ -609,19 +322,11 @@ uglyURLs = false
 
     ######################################
     # Yandex.Metrika
-    # https://metrika.yandex.ru/
-
-    # Note: render only in production
-    #       environment
-
     yandexMetrikaId = ""
 
 
     ######################################
     # Post Settings
-
-    # The color change duration of the
-    # hyperlink (in seconds)
     duration = 0.5
 
     # Primary color of light mode
@@ -755,7 +460,7 @@ uglyURLs = false
 
     enableCaption = true
 
-    captionPrefix = "◎ "
+    captionPrefix = "◎"
 
 
     ######################################
@@ -1146,171 +851,72 @@ uglyURLs = false
     # Custom Footer (Markdown supported)
     customFooter = "👀[无法自制的人得不到自由](/)👀"
 
-    displayBusuanziSiteUVAndPV = false
+    displayBusuanziSiteUVAndPV = true
     busuanziSiteUVText = "本站访客数"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "本站访问量"
     busuanziSitePVIcon = "eye"
-    # Note: render only in production
-    #       environment
-    #       Leave it empty("") if you
-    #       don’t need the text or icon
-    #       https://busuanzi.ibruce.info/
-
-    # Socials
     enableSocials = false
-    # Note: see data/Socials.toml
 
 
     ######################################
     # Multilingual
-
     enableLangToggle = false
-
     hideLangToggleInHome = false
-
     autoHideLangToggle = true
-    # Note: in other words, the toggle is
-    #       displayed only when the post
-    #       has a translated version
-
 
     ######################################
     # Code Blocks
-
     enableHighlight = true
-
     enableOverflowY = true
     maxHeight = 20
-    # Unit: em
-
     enableCopy = true
     enableCopyAutoHide = true
 
 
     ######################################
     # Fingerprinting and SRI
-
-    # Note: valid for CSS and JS generated
-    #       by MemE only
-
     enableFingerprint = true
-
     enableSRI = false
-    # Note: subresource integrity will
-    #       block MemE CSS and JS on third
-    #       party websites like Google
-    #       Translate. To prevent this,
-    #       your server has to send the
-    #       following header for CSS and
-    #       JS requests:
-    #
-    #       Access-Control-Allow-Origin: *
-
 
     ######################################
     # Force HTTPS Redirection
-
-    # Note: render only in production
-    #       environment
-
     enableForceHTTPS = false
-    # Note: use JavaScript for redirection.
-    #       You can enable this if your
-    #       server does not support forced
-    #       HTTPS.
 
 
     ######################################
     # Smooth Scroll
-
     enableSmoothScroll = true
 
 
     ######################################
     # Medium Zoom
-
     enableMediumZoom = true
-    # Note: https://github.com/francoischalifour/medium-zoom
 
 
     ######################################
     # Instant Page
-
     enableInstantPage = true
-    # Note: https://github.com/instantpage/instant.page
 
 
     ######################################
     # Lunr search
-
-    # Note: This requires SearchIndex
-    #       output to be enabled.
-
     enableLunrSearch = true
     # Note: https://lunrjs.com/
 
 
     ######################################
     # Algolia search
-
-    # Note: This requires Algolia
-    #       output to be enabled.
-    #       And you need to upload the
-    #       generated algolia.json to
-    #       Algolia every time you rebuild
-    #       your site.
-
     enableAlgoliaSearch = false
-
     algoliaAppId = ""
     algoliaApiKey = ""
     algoliaIndexName = ""
-    # Note: https://www.algolia.com/
 
 
     ######################################
     # 404 Page
-
     fofPoster = ""
-
     fofVideoWebm = ""
     fofVideoMp4 = ""
-    # Note: you can leave these two
-    #       options empty("")
-
-
-    ######################################
-    # Customize host for third-party libraries
-
-    # [params.lib]
-    #     host = "https://cdn.jsdelivr.net"
-    #     # Note: set it to root("/") and set
-    #     #       the path below if you want to host
-    #     #       the lib directly from “local”.
-    #     #       I.e. set path to "js/lib.min.js",
-    #     #       and put this file to your
-    #     #       /static/js/lib.min.js
-    # [params.lib.path]
-    #     clipboard = "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js"
-    #     instantsearch = "/npm/instantsearch.js@2/dist/instantsearch.min.js"
-    #     gitalk = "/npm/gitalk@1/dist/gitalk.min.js"
-    #     gitalk_css = "/npm/gitalk@1/dist/gitalk.css"
-    #     instantpage = "/npm/instant.page@5.1.0/instantpage.min.js"
-    #     katex = "/npm/katex@0.13.0/dist/katex.min.js"
-    #     katex_css = "/npm/katex@0.13.0/dist/katex.min.css"
-    #     katex_mhchem = "/npm/katex@0.13.0/dist/contrib/mhchem.min.js"
-    #     katex_auto_render = "/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
-    #     lunr = "/npm/lunr@2.3.9/lunr.min.js"
-    #     lunr_tinyseg = "/npm/lunr-languages@1.4.0/tinyseg.js"
-    #     lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
-    #     lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
-    #     mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
-    #     medium_zoom = "/npm/medium-zoom@latest/dist/medium-zoom.min.js"
-    #     mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
-    #     qrcode = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
-    #     valine = "/npm/valine@1.4.14/dist/Valine.min.js"
-    #     busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-    #     utterances = "https://utteranc.es/client.js"
 
 
