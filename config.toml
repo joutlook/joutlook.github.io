@@ -333,7 +333,7 @@ uglyURLs = false
 
     ## Poetry
     # Verse (Markdown supported)
-    homePoetry = ["## 断章", "你站在桥上看风景", "看风景的人在楼上看你", "明月装饰了你的窗子", "你装饰了别人的梦", "---", "|👉[**POSTS**](/posts)👈 | 👉[**TAGS**](/tags)👈|", "---", "Github Mirror: [https://joutlook.github.io](https://joutlook.github.io/posts)"]
+    homePoetry = ["## 咏鹅", "鹅鹅鹅", "曲项向天歌", "白毛浮绿水", "红掌拨清波", "---", "|👉[**POSTS**](/posts)👈 | 👉[**TAGS**](/tags)👈|", "---"]
     # Padding of links at the bottom
     # Unit: em
     homeLinksPadding = 1
@@ -368,54 +368,7 @@ uglyURLs = false
     #       Open Graph, Atom, RSS
 
     siteCreatedTime = "2018-07-20T20:17:43+00:00"
-    # ATTENTION: keep this format, change
-    #            the number
-
-    #siteTwitter = "reuixiy"
-    # Note: used for Twitter Cards
-
-
-    ######################################
-    # Category By
-
-    # MemE supports category by:
-    # 1. sections
-    # 2. categories
-    # The sections is based on the site’s
-    # `content` directory structure; the
-    # categories is based on the post’s
-    # Front Matter. First of all, category
-    # means tree structure (nested, with
-    # sub-category). To achieve it, Hexo
-    # uses the second method, while Hugo
-    # uses the first method. Due to the
-    # different design philosophy, the
-    # difference between Hexo and Hugo has
-    # been made. Therefore, this option
-    # was designed here to be user friendly
-    # to those who come from Hexo. But note
-    # that the second method cannot be
-    # implemented perfectly in Hugo. I
-    # recommended you adapt to Hugo’s design
-    # philosophy if you want to keep the
-    # tree organization structure of your
-    # posts.
-
     categoryBy = "sections"
-    # ATTENTION: If you set it to `sections`,
-    #            be sure to delete `categories`
-    #            in `taxonomies` at the top
-    #            of this file. Otherwise,
-    #            the categories page will
-    #            be invalid. Also, you need
-    #            to create a new
-    #            `content/categories/_index.md`
-    #            file by yourself.
-
-
-    ######################################
-    # Categories Page
-
     # Enable tree structure layout?
     enableTree = true
     # ATTENTION: This option cannot be
@@ -473,19 +426,6 @@ uglyURLs = false
     i18nYear = false
     # Translate the month? (valid for title)
     i18nMonth = false
-
-
-    ######################################
-    # Taxonomy List Page
-
-    # Note: for categories page, you can
-    #       set `enableTree` to false to
-    #       get a normal taxonomy list
-    #       page; for tags page, you can
-    #       set `enableTagCloud` to false
-    #       to get a normal taxonomy list
-    #       page.
-
     # Display count of posts in each
     # taxonomy term?
     displayTaxonomyTermCount = true
@@ -494,92 +434,13 @@ uglyURLs = false
     # the number of posts displayed per
     # taxonomy term.
     limitEntriesLimit = -1
-
-
-    ######################################
-    # Post Sections
-
-    # Note: the name of the section is the
-    #       name of the folder under the
-    #       site’s `content` directory.
-
-    # mainSections = ["posts"]
-
-
-    ######################################
-    # Atom & RSS
-
     # Include full content?
     includeContent = true
-    # Note: If false, only the summary of
-    #       the post will be included. The
-    #       summary, Hugo automatically
-    #       takes the first 70 words (you
-    #       can customize this via
-    #       `summaryLength`) of your content
-    #       as its summary by default.
-    #       Alternatively, you may use the
-    #       <!--more--> (with no whitespace)
-    #       summary divider to split summary
-    #       manually. Or use the `summary`
-    #       variable in post’s Front
-    #       Matter to assign it manually.
-    #       The priority of them: assign
-    #       manually > split manually >
-    #       split automatically. Additionally,
-    #       `description` in post’s Front
-    #       Matter has a higher priority
-    #       than assign manually in the
-    #       custom Atom & RSS template of
-    #       MemE.
-
-
-    ######################################
-    # Dark Mode
-
     enableDarkMode = true
-
     defaultTheme = "light"
-    # Note: light or dark
-
     hideThemeToggle = false
     hideThemeToggleInHome = false
-    # Note: If dark mode is enabled and
-    #       theme toggle is hidden, your
-    #       readers may still read your
-    #       blog in dark mode if the
-    #       reader’s system is set to dark
-    #       mode. Similarly, if dark mode
-    #       is enabled and is set to the
-    #       default theme, your readers
-    #       may still read your blog in
-    #       light mode, even if you have
-    #       hidden the theme toggle.
-    #       Unless you enable the following
-    #       option.
-
     overrideSystemPreferences = false
-
-
-    ######################################
-    # Web App
-
-    # Note: go to https://realfavicongenerator.net/
-    #       to generate related icons and
-    #       files, unzip after downloading,
-    #       and keep only android-chrome-512x512.png,
-    #       apple-touch-icon.png, mstile-150x150.png,
-    #       safari-pinned-tab.svg, favicon.ico,
-    #       site.webmanifest these files,
-    #       delete the rest. Then move
-    #       these files to the ~/blog/static/icons/
-    #       directory, move favicon.ico,
-    #       site.webmanifest to the ~/blog/static/
-    #       directory, and finally rename
-    #       site.webmanifest to manifest.json,
-    #       and check and modify related
-    #       content (the path of the icons).
-
     themeColor = "#fff"
     themeColorDark = "#16171d"
     safariMaskColor = "#2a6df4"
@@ -592,84 +453,18 @@ uglyURLs = false
     jsonLD = true
     openGraph = true
     twitterCards = false
-    # ATTENTION: If you set twitterCards
-    #            to `true`, be sure to
-    #            enable openGraph also.
-    #            Otherwise, the Twitter
-    #            Cards info will be
-    #            incomplete.
-
     autoDetectImages = true
-    # Note: It is recommended to enable it.
-    #       Otherwise, you must manually
-    #       specify `images` in post’s
-    #       Front Matter or links you
-    #       shared on social networks or
-    #       APPs will not be able to
-    #       display a summary view with a
-    #       large image.
-
-
-    ######################################
-    # Service Worker
-
-    # Note: render only in production
-    #       environment
-
     enableServiceWorker = false
-
-
-    ######################################
-    # KaTeX (chemical equation supported)
-
     enableKaTeX = false
-    # Note: *global settings*
-    #       `katex` in post’s Front Matter
-    #       has a higher priority than here
-
-
-    ######################################
-    # MathJax (chemical equation supported)
-
     enableMathJax = false
-    # Note: *global settings*
-    #       `mathjax` in post’s Front Matter
-    #       has a higher priority than here
-
     disableMathJaxMenu = false
-
-
-    ######################################
-    # Mermaid (https://github.com/mermaid-js/mermaid)
-
     enableMermaid = false
-    # Note: *global settings*
-    #       `mermaid` in post’s Front Matter
-    #       has a higher priority than here
-
     mermaidTheme = 'default'
     mermaidThemeDark = 'dark'
-
-
-    ######################################
-    # Comments
-
-    # Note: render only in production
-    #       environment
-
     enableComments = true
-    # Note: *global settings*
-    #       `comments` in post’s Front Matter
-    #       has a higher priority than here
-
-    # directly load the comments after pages loaded
     autoLoadComments = false
-
-    ## Disqus
     enableDisqus = false
     disqusShortname = "ferstar"
-
-    ## Valine
     enableValine = false
     valineAppId = ""
     valineAppKey = ""
@@ -688,10 +483,9 @@ uglyURLs = false
     valineEmojiMaps = {}
     valineEnableQQ = false
     valineRequiredFields = []
-    # Note: https://valine.js.org/
 
     ## Utterances
-    enableUtterances = true
+    enableUtterances = false
     utterancesRepo = "joutlook/joutlook.github.io"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
