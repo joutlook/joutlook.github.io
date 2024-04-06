@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title type="text">Hugo Theme MemE</title>
-    <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2024-04-04T22:55:23&#43;08:00</updated>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title type="text">J Out Look</title>
+    <subtitle type="html">无法自制的人得不到自由</subtitle>
+    <updated>2024-04-06T23:59:05&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
     <author>
-            <name>reuixiy</name>
+            <name>joutlook</name>
             <uri>http://localhost:1313/</uri>
             
-                <email>reuixiy@gmail.com</email>
+                <email>joutlook@outlook.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.124.1">Hugo</generator>
@@ -23,9 +23,9 @@
             <updated>2024-04-04T22:55:13&#43;08:00</updated>
             <published>2024-04-04T22:49:55&#43;08:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>joutlook</name>
+                    <uri>https://joutlook.github.io/</uri>
+                    <email>joutlook@outlook.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Introduction This is bold text, and this is emphasized text.
 Visit the Hugo website!</summary>
@@ -37,10 +37,20 @@ Visit the Hugo website!</summary>
             
             
             
-            
-            
+                
+                
                 
                     
+                    
+                    
+                        
+                            <category scheme="http://localhost:1313/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
                 
                     
                 

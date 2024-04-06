@@ -107,17 +107,11 @@ uglyURLs = false
         pre = "internal"
         post = "archive"
     [[menu.main]]
-        pageref = "/tags/"
-        name = "Tags"
-        weight = 4
-        pre = "internal"
-        post = "tags"
-    [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
 
 [params]
-    enableHeader = false
+    enableHeader = true
     enableHeaderAutoHide = true
     displayHeaderInHome = false
     headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
@@ -162,7 +156,7 @@ uglyURLs = false
     ######################################
     # Tags Page
 
-    enableTagCloud = true
+    enableTagCloud = false
     fontUnit = "em"
     largestFontSize = 2.5
     smallestFontSize = 1
@@ -791,7 +785,7 @@ uglyURLs = false
     # Minimal Footer
 
     enableMinimalFooter = true
-    enableVerticalBarStructure = true
+    enableVerticalBarStructure = false
     # Note: If you enable this, the
     #       categories or sections that
     #       displayed on the right will
