@@ -202,7 +202,7 @@ uglyURLs = false
     enableMermaid = false
     mermaidTheme = 'default'
     mermaidThemeDark = 'dark'
-    enableComments = true
+    enableComments = false
     autoLoadComments = false
     enableDisqus = false
     disqusShortname = "ferstar"
@@ -747,9 +747,9 @@ uglyURLs = false
     ######################################
     # Related Posts
 
-    enableRelatedPosts = true
+    enableRelatedPosts = false
 
-    displayRelatedPosts = true
+    displayRelatedPosts = false
     # Note: *global settings*
     #       `related` in post’s Front Matter
     #       has a higher priority than here
