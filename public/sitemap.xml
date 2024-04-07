@@ -3,14 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-04-04T22:55:13+08:00</lastmod>
+    <lastmod>2024-04-07T17:06:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-04-07T17:06:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/pop_os%E4%BD%93%E9%AA%8C/</loc>
+    <lastmod>2024-04-07T17:06:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-04-07T17:06:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-07T17:06:41+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2024-04-04T22:55:13+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-04-04T22:55:13+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

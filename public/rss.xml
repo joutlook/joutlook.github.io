@@ -21,10 +21,55 @@
             <webMaster>joutlook@outlook.com (joutlook)</webMaster>
         
         
-        <lastBuildDate>Sun, 07 Apr 2024 16:43:08 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 07 Apr 2024 17:06:44 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
+        
+            <item>
+                <title>Pop_OS体验</title>
+                <link>http://localhost:1313/posts/pop_os%E4%BD%93%E9%AA%8C/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/pop_os%E4%BD%93%E9%AA%8C/</guid>
+                <pubDate>Sun, 07 Apr 2024 16:51:33 &#43;0800</pubDate>
+                
+                    <author>joutlook@outlook.com (joutlook)</author>
+                
+                
+                
+                    <description>&lt;blockquote&gt;
+&lt;p&gt;一直寻找好用的 &lt;code&gt;Linux&lt;/code&gt; 发行版,直到遇到了 &lt;code&gt;Pop_OS&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://localhost:1313/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://localhost:1313/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>my first post</title>
