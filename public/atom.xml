@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
     <title type="text">J Out Look</title>
     <subtitle type="html">无法自制的人得不到自由</subtitle>
-    <updated>2024-04-07T10:16:25&#43;08:00</updated>
+    <updated>2024-04-07T16:43:08&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
