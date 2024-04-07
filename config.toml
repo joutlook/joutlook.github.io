@@ -2,7 +2,7 @@ baseURL = "https://joutlook.github.io/"
 title = "J Out Look"
 languageCode = "zh"
 hasCJKLanguage = true
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+#copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 theme = "meme"
 newContentEditor = ""
 defaultContentLanguage = "zh"
@@ -756,7 +756,7 @@ uglyURLs = false
     ######################################
     # Post Tags
 
-    enablePostTags = false
+    enablePostTags = true
 
     postTagsIcon = "tag"
 
@@ -839,7 +839,7 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # Custom Footer (Markdown supported)
-    customFooter = "👀[无法自制的人得不到自由](/)👀"
+    customFooter = "👇[无法自制的人得不到自由](/)👇"
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
@@ -891,7 +891,7 @@ uglyURLs = false
 
     ######################################
     # Lunr search
-    enableLunrSearch = true
+    enableLunrSearch = false
     # Note: https://lunrjs.com/
 
 
