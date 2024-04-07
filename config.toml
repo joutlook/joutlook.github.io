@@ -2,7 +2,6 @@ baseURL = "https://joutlook.github.io/"
 title = "J Out Look"
 languageCode = "zh"
 hasCJKLanguage = true
-#copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 theme = "meme"
 newContentEditor = ""
 defaultContentLanguage = "zh"
