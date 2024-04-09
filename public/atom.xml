@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
     <title type="text">J Out Look</title>
     <subtitle type="html">无法自制的人得不到自由</subtitle>
-    <updated>2024-04-07T17:06:44&#43;08:00</updated>
+    <updated>2024-04-09T09:38:00&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
@@ -20,18 +20,20 @@
             <title type="text">Pop_OS体验</title>
             <link rel="alternate" type="text/html" href="http://localhost:1313/posts/pop_os%E4%BD%93%E9%AA%8C/" />
             <id>http://localhost:1313/posts/pop_os%E4%BD%93%E9%AA%8C/</id>
-            <updated>2024-04-07T17:06:41&#43;08:00</updated>
+            <updated>2024-04-09T09:37:58&#43;08:00</updated>
             <published>2024-04-07T16:51:33&#43;08:00</published>
             <author>
                     <name>joutlook</name>
                     <uri>https://joutlook.github.io/</uri>
                     <email>joutlook@outlook.com</email>
                     </author>
-            <summary type="html">一直寻找好用的 Linux 发行版,直到遇到了 Pop_OS</summary>
+            <summary type="html">一直寻找好用的 Linux 发行版,直到遇到了 Pop_OS 添加图片测试</summary>
             
                 <content type="html">&lt;blockquote&gt;
 &lt;p&gt;一直寻找好用的 &lt;code&gt;Linux&lt;/code&gt; 发行版,直到遇到了 &lt;code&gt;Pop_OS&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;添加图片测试
+&lt;img src=&#34;http://localhost:1313/images/2024-04-08_10-24-50.png&#34; alt=&#34;t&#34;&gt;&lt;/p&gt;
 </content>
             
             

@@ -21,7 +21,7 @@
             <webMaster>joutlook@outlook.com (joutlook)</webMaster>
         
         
-        <lastBuildDate>Sun, 07 Apr 2024 17:06:44 &#43;0800</lastBuildDate>
+        <lastBuildDate>Tue, 09 Apr 2024 09:38:00 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
@@ -39,6 +39,8 @@
                     <description>&lt;blockquote&gt;
 &lt;p&gt;一直寻找好用的 &lt;code&gt;Linux&lt;/code&gt; 发行版,直到遇到了 &lt;code&gt;Pop_OS&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;添加图片测试
+&lt;img src=&#34;http://localhost:1313/images/2024-04-08_10-24-50.png&#34; alt=&#34;t&#34;&gt;&lt;/p&gt;
 </description>
                 
                 
