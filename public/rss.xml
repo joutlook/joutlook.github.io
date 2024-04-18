@@ -10,7 +10,7 @@
         <title>J Out Look</title>
         <link>http://localhost:1313/</link>
         <description>无法自制的人得不到自由</description>
-        <generator>Hugo 0.124.1 https://gohugo.io/</generator>
+        <generator>Hugo 0.125.1 https://gohugo.io/</generator>
         
             <language>zh</language>
         
@@ -21,10 +21,101 @@
             <webMaster>joutlook@outlook.com (joutlook)</webMaster>
         
         
-        <lastBuildDate>Tue, 09 Apr 2024 09:38:00 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 18 Apr 2024 16:59:30 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
+        
+            <item>
+                <title>postman_install_pop</title>
+                <link>http://localhost:1313/posts/postman_install_pop/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/postman_install_pop/</guid>
+                <pubDate>Thu, 18 Apr 2024 16:58:01 &#43;0800</pubDate>
+                
+                    <author>joutlook@outlook.com (joutlook)</author>
+                
+                
+                
+                    <description>&lt;h2 id=&#34;installing-postman&#34;&gt;Installing Postman&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If any version of postman is installed we need to remove it&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo rm -rf /opt/Postman
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This will install postman to &lt;code&gt;/tmp&lt;/code&gt; directory and move it to &lt;code&gt;/opt/&lt;/code&gt; directory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tar -C /tmp/ -xzf &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -L https://dl.pstmn.io/download/latest/linux64&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mv /tmp/Postman /opt/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Create a desktop file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo tee -a /usr/share/applications/postman.desktop &lt;span class=&#34;s&#34;&gt;&amp;lt;&amp;lt; END
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;[Desktop Entry]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Encoding=UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Name=Postman
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Exec=/opt/Postman/Postman
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Icon=/opt/Postman/app/resources/app/assets/icon.png
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Terminal=false
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Type=Application
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;Categories=Development;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;END&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://localhost:1313/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://localhost:1313/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Pop_OS体验</title>
@@ -41,7 +132,67 @@
 &lt;/blockquote&gt;
 &lt;p&gt;添加图片测试
 &lt;img src=&#34;http://localhost:1313/images/2024-04-08_10-24-50.png&#34; alt=&#34;t&#34;&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;代码块测试1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+filecount = 30000
+filesize = 1024
+
+
+import random, time
+from os import system
+flush = &amp;#34;sudo su -c &amp;#39;sync ; echo 3 &amp;gt; /proc/sys/vm/drop_caches&amp;#39;&amp;#34;
+
+randfile = open(&amp;#34;/dev/urandom&amp;#34;, &amp;#34;r&amp;#34;)
+
+print &amp;#34;\ncreate test folder:&amp;#34;
+starttime = time.time()
+system(&amp;#34;rm -rf test &amp;amp;&amp;amp; mkdir test&amp;#34;)
+print time.time() - starttime
+system(flush)
+
+print &amp;#34;\ncreate files:&amp;#34;
+starttime = time.time()
+for i in xrange(filecount):
+    rand = randfile.read(int(filesize * 0.5 + filesize * random.random()))
+    outfile = open(&amp;#34;test/&amp;#34; + unicode(i), &amp;#34;w&amp;#34;)
+    outfile.write(rand)
+print time.time() - starttime
+system(flush)
+
+print &amp;#34;\nrewrite files:&amp;#34;
+starttime = time.time()
+for i in xrange(int(filecount / 10)):
+    rand = randfile.read(int(filesize * 0.5 + filesize * random.random()))
+    outfile = open(&amp;#34;test/&amp;#34; + unicode(int(random.random() * filecount)), &amp;#34;w&amp;#34;)
+    outfile.write(rand)
+print time.time() - starttime
+system(flush)
+
+print &amp;#34;\nread linear:&amp;#34;
+starttime = time.time()
+for i in xrange(int(filecount / 10)):
+    infile = open(&amp;#34;test/&amp;#34; + unicode(i), &amp;#34;r&amp;#34;)
+    outfile.write(infile.read());
+print time.time() - starttime
+system(flush)
+
+print &amp;#34;\nread random:&amp;#34;
+starttime = time.time()
+outfile = open(&amp;#34;/dev/null&amp;#34;, &amp;#34;w&amp;#34;)
+for i in xrange(int(filecount / 10)):
+    infile = open(&amp;#34;test/&amp;#34; + unicode(int(random.random() * filecount)), &amp;#34;r&amp;#34;)
+    outfile.write(infile.read());
+print time.time() - starttime
+system(flush)
+
+print &amp;#34;\ndelete all files:&amp;#34;
+starttime = time.time()
+system(&amp;#34;rm -rf test&amp;#34;)
+print time.time() - starttime
+system(flush)
+&lt;/code&gt;&lt;/pre&gt;</description>
                 
                 
                 
