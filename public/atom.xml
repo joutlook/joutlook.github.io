@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
     <title type="text">J Out Look</title>
     <subtitle type="html">无法自制的人得不到自由</subtitle>
-    <updated>2024-04-18T16:59:30&#43;08:00</updated>
+    <updated>2024-04-22T15:02:54&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
@@ -16,6 +16,60 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.125.1">Hugo</generator>
+        <entry>
+            <title type="text">一次k8s报错解决</title>
+            <link rel="alternate" type="text/html" href="http://localhost:1313/posts/%E4%B8%80%E6%AC%A1k8s%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/" />
+            <id>http://localhost:1313/posts/%E4%B8%80%E6%AC%A1k8s%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</id>
+            <updated>2024-04-22T15:02:50&#43;08:00</updated>
+            <published>2024-04-22T14:58:37&#43;08:00</published>
+            <author>
+                    <name>joutlook</name>
+                    <uri>https://joutlook.github.io/</uri>
+                    <email>joutlook@outlook.com</email>
+                    </author>
+            <summary type="html">问题 failed to create fsnotify watcher: too many open files 解决方案: sudo sysctl fs.inotify.max_user_instances=81920 下面是持久化更改 echo fs.inotify.max_user_instances=81920 &amp;gt;&amp;gt; /etc/sysctl.conf &amp;amp;&amp;amp; sysctl -p</summary>
+            
+                <content type="html">&lt;h2 id=&#34;问题-failed-to-create-fsnotify-watcher-too-many-open-files&#34;&gt;问题 failed to create fsnotify watcher: too many open files&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解决方案:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo sysctl fs.inotify.max_user_instances=81920&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面是持久化更改&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;echo fs.inotify.max_user_instances=81920 &amp;gt;&amp;gt; /etc/sysctl.conf &amp;amp;&amp;amp;  sysctl -p&lt;/code&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://localhost:1313/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/linux/" term="Linux" label="Linux" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">postman_install_pop</title>
             <link rel="alternate" type="text/html" href="http://localhost:1313/posts/postman_install_pop/" />

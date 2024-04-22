@@ -21,10 +21,61 @@
             <webMaster>joutlook@outlook.com (joutlook)</webMaster>
         
         
-        <lastBuildDate>Thu, 18 Apr 2024 16:59:30 &#43;0800</lastBuildDate>
+        <lastBuildDate>Mon, 22 Apr 2024 15:02:54 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
+        
+            <item>
+                <title>一次k8s报错解决</title>
+                <link>http://localhost:1313/posts/%E4%B8%80%E6%AC%A1k8s%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/%E4%B8%80%E6%AC%A1k8s%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
+                <pubDate>Mon, 22 Apr 2024 14:58:37 &#43;0800</pubDate>
+                
+                    <author>joutlook@outlook.com (joutlook)</author>
+                
+                
+                
+                    <description>&lt;h2 id=&#34;问题-failed-to-create-fsnotify-watcher-too-many-open-files&#34;&gt;问题 failed to create fsnotify watcher: too many open files&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解决方案:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo sysctl fs.inotify.max_user_instances=81920&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面是持久化更改&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;echo fs.inotify.max_user_instances=81920 &amp;gt;&amp;gt; /etc/sysctl.conf &amp;amp;&amp;amp;  sysctl -p&lt;/code&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="http://localhost:1313/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://localhost:1313/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>postman_install_pop</title>
